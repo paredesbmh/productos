@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaginaService } from 'src/app/services/pagina.service';
 
 @Component({
   selector: 'app-pie',
@@ -9,7 +10,7 @@ export class PieComponent implements OnInit {
 
   anio: number = new Date().getFullYear();
 
-  constructor() { }
+  constructor(public _pagina: PaginaService) { }
 
   ngOnInit() {
   }

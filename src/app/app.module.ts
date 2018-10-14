@@ -9,6 +9,8 @@ import { AcercaComponent } from './admin/acerca/acerca.component';
 import { ProductoDetalleComponent } from './producto/producto-detalle/producto-detalle.component';
 import { AppRouting } from './app-routing.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,7 @@ import { AppRouting } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRouting,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
